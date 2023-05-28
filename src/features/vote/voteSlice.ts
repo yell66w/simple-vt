@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../../app/store";
 
-interface NomineeInterface {
+export interface NomineeInterface {
   id: number;
   name: string;
 }

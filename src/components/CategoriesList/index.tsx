@@ -1,5 +1,5 @@
-import Category from "../../components/Category";
-import Nominee from "../../components/Nominee";
+import Category from "../Category";
+import Nominee from "../Nominee";
 import data from "../../data/data.json";
 import styles from "./styles.module.css";
 

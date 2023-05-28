@@ -1,7 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Popup from "./components/Popup";
-import CategoriesList from "./containers/CategoriesList";
+import CategoriesList from "./components/CategoriesList";
 function App() {
   return (
     <>
