@@ -1,0 +1,21 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.content {
+  background-color: #f6a131;
+  padding: 1rem;
+}
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+.header {
+  background-color: #e6c635;
+  text-align: center;
+}

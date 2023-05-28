@@ -29,5 +29,36 @@
         "image": "benedict_cumberbatch.jpg"
       }
     ]
+  },
+  {
+    "id": 1,
+    "title": "Ladies of the year",
+    "nominees": [
+      {
+        "id": 1,
+        "name": "Chris",
+        "image": "chris_hemsworth.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Evans",
+        "image": "chris_evans.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Robert",
+        "image": "robert_downey.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Tom",
+        "image": "tom_holland.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Ben",
+        "image": "benedict_cumberbatch.jpg"
+      }
+    ]
   }
 ]

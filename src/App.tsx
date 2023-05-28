@@ -1,18 +1,17 @@
-import { Fragment } from "react";
 import Nominee from "./components/Nominee";
 import data from "./data/data.json";
+import Category from "./components/Category";
 function App() {
   return (
     <>
       <p>Online Votes</p>
       {data?.map(({ id, title, nominees }) => {
         return (
-          <Fragment key={id}>
-            <h1>{title}</h1>
+          <Category key={id} title={title}>
             {nominees?.map(({ id: nomineeId, image, name }) => {
               return <Nominee key={nomineeId} name={name} image={image} />;
             })}
-          </Fragment>
+          </Category>
         );
       })}
     </>
