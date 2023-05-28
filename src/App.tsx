@@ -1,19 +1,12 @@
-import Nominee from "./components/Nominee";
-import data from "./data/data.json";
-import Category from "./components/Category";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import CategoriesList from "./containers/CategoriesList";
 function App() {
   return (
     <>
-      <p>Online Votes</p>
-      {data?.map(({ id, title, nominees }) => {
-        return (
-          <Category key={id} title={title}>
-            {nominees?.map(({ id: nomineeId, image, name }) => {
-              return <Nominee key={nomineeId} name={name} image={image} />;
-            })}
-          </Category>
-        );
-      })}
+      <Header />
+      <CategoriesList />
+      <Footer />
     </>
   );
 }

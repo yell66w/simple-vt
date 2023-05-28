@@ -4,6 +4,9 @@
   cursor: pointer;
   padding: 0.4rem 1.6rem;
 }
+.btn-rounded {
+  border-radius: 4px;
+}
 .bg-yellow {
   background-color: #e6c635;
 }
