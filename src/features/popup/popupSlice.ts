@@ -1,7 +1,6 @@
-import { RootState } from "../../app/store";
-import { VoteDataInterface } from "../vote/voteSlice";
-import { PayloadAction } from "./../../../node_modules/@reduxjs/toolkit/src/createAction";
 import { createSlice } from "@reduxjs/toolkit";
+import { RootState } from "../../app/store";
+import { PayloadAction } from "./../../../node_modules/@reduxjs/toolkit/src/createAction";
 
 export interface PopupState {
   value: string | null;
