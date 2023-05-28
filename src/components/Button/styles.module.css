@@ -1,3 +1,27 @@
-.error {
-  background-color: red;
+.btn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem 1.6rem;
+}
+.bg-yellow {
+  background-color: #e6c635;
+}
+.bg-gray {
+  background-color: #b8bcb5;
+}
+.text-white {
+  color: white;
+}
+.text-black {
+  color: black;
+}
+.border-yellow {
+  border: 1px solid #e6c635;
+}
+.border-gray {
+  border: 1px solid #bbbdb4;
+}
+.border-black {
+  border: 1px solid black;
 }
