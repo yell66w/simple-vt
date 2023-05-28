@@ -1,10 +1,17 @@
+import { useAppDispatch } from "../../app/hooks";
+import { submitVotes } from "../../features/vote/voteSlice";
 import Button from "../Button";
 import styles from "./styles.module.css";
 
 const Footer = () => {
+  const dispatch = useAppDispatch();
+  const submitVotesHandler = () => {
+    dispatch(submitVotes());
+  };
   return (
     <footer className={styles.footer}>
       <Button
+        onClick={submitVotesHandler}
         variant="rounded"
         borderColor="black"
         textColor="black"

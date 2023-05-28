@@ -7,6 +7,7 @@ interface Props {
   children: ReactNode;
   borderColor?: "yellow" | "gray" | "black";
   variant?: "rounded" | "default";
+  onClick?: () => void;
 }
 const Button = ({
   bgColor = "gray",
@@ -14,6 +15,7 @@ const Button = ({
   textColor = "white",
   variant = "default",
   borderColor,
+  onClick,
 }: Props) => {
   const btnBorderColor = `border-${borderColor || bgColor}`;
   const btnTextColor = `text-${textColor}`;
@@ -22,6 +24,7 @@ const Button = ({
 
   return (
     <button
+      onClick={onClick}
       className={`${styles.btn} ${styles[btnBorderColor]} ${styles[btnBgColor]} ${styles[btnTextColor]} ${styles[btnVariant]}`}
     >
       {children}
