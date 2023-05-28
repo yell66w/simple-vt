@@ -2,10 +2,11 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import voteSlice from "../features/vote/voteSlice";
 import storage from "redux-persist/lib/storage";
 import { persistReducer, persistStore } from "redux-persist";
+import popupSlice from "../features/popup/popupSlice";
 const rootPersistConfig = {
   key: "root",
   storage,
-  blacklist: ["votes"],
+  blacklist: ["votes", "popup"],
 };
 const votePersistConfig = {
   key: "votes",
@@ -15,6 +16,7 @@ const votePersistConfig = {
 
 const rootReducer = combineReducers({
   votes: persistReducer(votePersistConfig, voteSlice),
+  popup: popupSlice,
 });
 const persistedReducer = persistReducer(rootPersistConfig, rootReducer);
 
