@@ -1,4 +1,5 @@
 import { RootState } from "../../app/store";
+import { VoteDataInterface } from "../vote/voteSlice";
 import { PayloadAction } from "./../../../node_modules/@reduxjs/toolkit/src/createAction";
 import { createSlice } from "@reduxjs/toolkit";
 
@@ -17,6 +18,7 @@ const popupSlice = createSlice({
     showPopup: (state, action: PayloadAction<string>) => {
       state.value = action.payload;
     },
+
     clearPopup: (state) => {
       state.value = initialState.value;
     },

@@ -15,18 +15,18 @@ interface Props {
 }
 const Nominee = ({ category_id, nominee_id, name, image }: Props) => {
   const dispatch = useAppDispatch();
-  const temp_voted_nominee_id = useAppSelector((state) =>
+  const temp_voted_nominee = useAppSelector((state) =>
     selectTempVoted(state, category_id)
   );
-  const submitted_voted_nominee_id = useAppSelector((state) =>
+  const submitted_voted_nominee = useAppSelector((state) =>
     selectSubmittedVoted(state, category_id)
   );
-  const voted = temp_voted_nominee_id
-    ? temp_voted_nominee_id === nominee_id
-    : submitted_voted_nominee_id === nominee_id;
+  const voted = temp_voted_nominee
+    ? temp_voted_nominee?.id === nominee_id
+    : submitted_voted_nominee?.id === nominee_id;
 
   const handleAddTempVote = () => {
-    dispatch(addTempVote({ category_id, nominee_id }));
+    dispatch(addTempVote({ category_id, nominee: { id: nominee_id, name } }));
   };
 
   return (

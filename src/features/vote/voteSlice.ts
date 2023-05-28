@@ -2,9 +2,16 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../../app/store";
 
+interface NomineeInterface {
+  id: number;
+  name: string;
+}
+export interface VoteDataInterface {
+  [category_id: number]: NomineeInterface;
+}
 export interface VoteState {
-  temp_data: { [category_id: number]: number };
-  submitted_data: { [category_id: number]: number };
+  temp_data: VoteDataInterface;
+  submitted_data: VoteDataInterface;
 }
 
 const initialState: VoteState = {
@@ -18,10 +25,13 @@ export const voteSlice = createSlice({
   reducers: {
     addTempVote: (
       state,
-      action: PayloadAction<{ category_id: number; nominee_id: number }>
+      action: PayloadAction<{
+        category_id: number;
+        nominee: NomineeInterface;
+      }>
     ) => {
-      const { category_id, nominee_id } = action.payload;
-      state.temp_data[category_id] = nominee_id;
+      const { category_id, nominee } = action.payload;
+      state.temp_data[category_id] = nominee;
     },
     submitVotes: (state) => {
       //Add validation
