@@ -23,6 +23,7 @@ yarn dev
 
 1. Only the elements specified in the wireframe were included, without any additional animations or effects
 2. If a user reloads the page, the voted nominees will persist, and the yellow vote button will still be displayed.
+3. Vote validation will only occur after clicking the submit button
 
 ## Deployment
 
