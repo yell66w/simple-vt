@@ -13,7 +13,7 @@ yarn dev
 ```
 
 3. Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the results.
-4. Run tests:
+4. Run tests and press a to run all:
 
 ```shell
 yarn test
