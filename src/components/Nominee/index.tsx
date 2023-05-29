@@ -35,7 +35,7 @@ const Nominee = ({ category_id, nominee_id, name, image }: Props) => {
       <main>
         <img
           className={`${styles.image}`}
-          src={`nominees/gentlemen/${image}`}
+          src={`nominees/${image}`}
           alt={name}
         />
       </main>

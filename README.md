@@ -12,6 +12,8 @@ yarn
 yarn dev
 ```
 
+3. Open [http://localhost:5173/](http://localhost:5173/) with your browser to see the results.
+
 ## Technology Stack
 
 1. React hooks
@@ -25,6 +27,9 @@ yarn dev
 ## Deployment
 
 1. App is deployed in vercel and will automatically watch for changes in `main` branch:
-   ```
-   git push origin main
-   ```
+
+```
+git push origin main
+```
+
+2. After building, open [http://simple-vt.vercel.app/](http://simple-vt.vercel.app/) with your browser to see the results.

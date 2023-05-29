@@ -36,28 +36,28 @@
     "nominees": [
       {
         "id": 6,
-        "name": "Chris",
-        "image": "chris_hemsworth.jpg"
+        "name": "Brie",
+        "image": "brie.jpg"
       },
       {
         "id": 7,
-        "name": "Evans",
-        "image": "chris_evans.jpg"
+        "name": "Scarlett",
+        "image": "scarlett.jpg"
       },
       {
         "id": 8,
-        "name": "Robert",
-        "image": "robert_downey.jpg"
+        "name": "Gal",
+        "image": "gal_gadot.jpg"
       },
       {
         "id": 9,
-        "name": "Tom",
-        "image": "tom_holland.jpg"
+        "name": "Natalie",
+        "image": "natalie.jpg"
       },
       {
         "id": 10,
-        "name": "Ben",
-        "image": "benedict_cumberbatch.jpg"
+        "name": "Eli",
+        "image": "eli.jpg"
       }
     ]
   }
